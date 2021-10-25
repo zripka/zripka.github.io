@@ -4,6 +4,13 @@ title:  "Welcome to Jekyll!"
 date:   2021-10-25 01:04:08 -0400
 categories: jekyll update
 ---
+I'm hanging on to the below content for now. I want to use this as a space to record what I'm doing, more of a notebook than a blog. Today has been about getting up and running with Jekyll and navigating git's switch from 'master' to 'main,' which was news to me--shows it's been a minute since I've done this. It feels good to have this little space carved out and ready for me to set up, though! 
+
+
+
+
+
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:

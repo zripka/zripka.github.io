@@ -15,6 +15,9 @@ In this [video](https://www.youtube.com/watch?v=O-lXmLoxD00), @Geekzone tells us
 
 My best guess is that I didn't connect the Raspberry Pi to the internet properly before I powered it up. I had only just unplugged the router to make power-plug room and I was impatient so I just hit the figurative button, and even if the router was properly booted up or whatever, the ethernet cable seemed kinda loose when I checked it a few minutes later. Next steps? I'll try re-flashing the Freedombox image and be super careful plugging everything in. If that doesn't work, I found some scary-looking forum posts I'll try to scrounge through next.
 
+# Second try: same thing again
+Is my ethernet cable busted?
+
 | All post updates   |
 |--------------------|
 | October 25th, 2021 |

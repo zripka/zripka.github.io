@@ -18,6 +18,13 @@ My best guess is that I didn't connect the Raspberry Pi to the internet properly
 # Second try: same thing again
 I repeated all the same steps from the @Geekzone video just in case I screwed something up. I think it legit doesn't work, though I'm sure it has something to do with the differences in either our networks or our hardware; @Geekzone uses a different Raspberry Pi than me, and it seemed to work fine.
 
+# Third try: Instructions from the Debian wiki
+Thanks for nothing, YouTube! (But actually thanks to @Geekzone, I appreciate u). I have to step out of my comfort zone (video tutorials) and follow some steps on the [wiki](https://wiki.debian.org/FreedomBox/Hardware/RaspberryPi4B). Immediately seeing that things are likely more complicated than I first thought. UEFI firmware? Oi. To be honest I'm not even sure what I'm doing, downloading this and using that image to set up the Raspberry Pi, but I'm going with it. Actually no---the wiki says that an alternative is to install Debian on the Raspberry Pi and then get the Freedombox packages up and running. I'm going to try that instead, because that way at least I can get "inside" the Raspberry Pi and have a better idea of what's going on. Using the video tutorial method, basically all I had to go off was literally the flashing little LEDs on the computer board, so this will be an improvement either way.
+
+Damn, as usual, having trouble following instructions because I'm on Windows. `wget` doesn't exist in git bash, or let me not say that---it would be a whole other process of installing it on my machine, etc. I just feel like Bash is so much more fluid and complete on linux. So needless to say I had to go around that part of the instructions.
+
+Ugh! I can't get the debian setup on Raspberry Pi to work headlessly, I can't connect to it whether it's on wifi or directly connected with Ethernet. This is frustrating, I feel like I can't get past step one.
+
 | All post updates   |
 |--------------------|
 | October 26th, 2021 |

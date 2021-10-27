@@ -4,7 +4,7 @@ title: "Running a Freedombox on a Raspberry Pi"
 date: 2021-10-25 18:00:00 -0400
 ---
 
-_(Last updated October 25th, 2021)_
+_(Last updated October 26th)_
 
 Freedombox is "a private server for non-experts." In 2021, it doesn't take a lot of imagination to think up some reasons that regular people might prefer to keep their data close to home. [Freedombox](https://www.freedombox.org/), a part of the free and open source Debian universe, lets you do just that. After you install Freedombox onto any single-board computer and connect it to your home router, you can use it to host your own voice conference calls, transfer files without using Google Drive or Dropbox, host your own chat server, and to do a long [list](https://wiki.debian.org/FreedomBox/Features) of other things.
 
@@ -16,9 +16,10 @@ In this [video](https://www.youtube.com/watch?v=O-lXmLoxD00), @Geekzone tells us
 My best guess is that I didn't connect the Raspberry Pi to the internet properly before I powered it up. I had only just unplugged the router to make power-plug room and I was impatient so I just hit the figurative button, and even if the router was properly booted up or whatever, the ethernet cable seemed kinda loose when I checked it a few minutes later. Next steps? I'll try re-flashing the Freedombox image and be super careful plugging everything in. If that doesn't work, I found some scary-looking forum posts I'll try to scrounge through next.
 
 # Second try: same thing again
-Is my ethernet cable busted?
+I repeated all the same steps from the @Geekzone video just in case I screwed something up. I think it legit doesn't work, though I'm sure it has something to do with the differences in either our networks or our hardware; @Geekzone uses a different Raspberry Pi than me, and it seemed to work fine.
 
 | All post updates   |
 |--------------------|
+| October 26th, 2021 |
 | October 25th, 2021 |
 

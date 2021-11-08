@@ -1,22 +1,39 @@
-# My notes for the git bash colours post
+---
+layout: post
+title: "Editing the shell prompt in Git Bash"
+---
 
-- take a screenshot of that bash script I wrote the other day
-- the comments and other stuff, like what comes after the shebang is just awful, it's almost impossible to see and I'm not even colourblind as far as I know.
-- I want to make the font a bit bigger and make the colour scheme less horrible to look at - how?
-- started by looking at Alan P. Barber's [post](https://alanbarber.com/post/how-to-customize-the-git-for-windows-bash-shell-prompt/)
-- in windows file explorer, go to `C:\Program Files\Git\etc\profile.d\git-prompt.sh` and open it up with Notepad++ or similar
-- I mean, it probably makes more sense to open it with vim within the git bash shell
-- take a screenshot of the above file within vim to show what the file looks like and also show off how bad my current font & colour scheme is (the default git bash)
-- it's like reading the fine print on a medication bottle, is this what we're supposed to look at all day?
-- okay what does this say
-- there are some things in here I don't understand - why does the second conditional check if the file it's in exist, and then run itself? wouldn't that create an infinite loop?
-- that being said, this looks pretty simple. Overall it's like, mainly just assigning values to environment variables as far as I can tell.
-- some stuff in Alan Barber's post I don't care that much about but I'll do it anyway so I got rid of the 'MINGW64' that appears in every prompt by deleting `PS1="$PS1"'\[\033[35m\]' # change to purple
-PS1="$PS1"'$MSYSTEM ' # show MSYSTEM`
-- okay, before I try to change the colours I decided to just change the prompt text. When I tried to save, nothing happened; vim gave me the message Can't open file for writing
-- this is tricky. I don't have permission to write to the file, so I tried to use chmod to give myself permission, but I also don't have permission to change permissions on the file. Finally, there's no sudo command installed in git bash, so I can't use it for chmod or to directly write to the git-prompt.sh file. Maybe that's why Alan Barber says to use Notepad++, because of the permissions regime.
-- installing sudo on git bash looks hacky and a time suck so I'm skipping it. Back to Notepad++
-- Even Notepad++ makes a point of saying that I'm not allowed to edit this, though the workaround comes when it asks to open in Administrator mode. You can see in Alan Barber's screenshots that their Notepad++ is also in Administrator mode, though they left it out of the instructions, which feels to me like an important omission. 
-- okay I saved it and still nothing. Just realized what's up with that weird loop - it's looking for some other file that also could contain this kind of config. I'm just going to comment that out for the time being.
-- got it going. Now that I've gone through this process, this may not actually be what I want. I don't mind the shell type stuff honestly, except maybe the font could be a bit bigger. It's really while I'm editing inside of Vim that's the issue. Maybe that's more of a Vim config thing than a git bash config thing. Hmm.
-- Thanks to Alan P. Barber for the post!
+Maybe it's just me, but the default fonts and colour schemes in a lot of shell terminals are god awful. I use Git Bash, PuTTY, and CygWin frequently and like, I mean...
+
+![difficult-to-read Vim screenshot](/assets/21-11-07-vim-screenshot.PNG)
+
+Like for real I'll give you five dollars if you can tell me, from a normal reading distance, what the bit after the shebang and the commented line say. I'm not even that colourblind as far as I know and man, that is awful.
+
+I wrote that script the other day using Vim in the CygWin shell. Forgetting which shell was really the culprit, I just spent some time trying out ways to switch the colours and font in Git Bash (whoops!). In the end, the default Git Bash colours aren't too bad, but it still led me down the trail of looking into this kind of config stuff.
+
+![less painful Vim screenshot](/assets/21-11-07-git-vim-screenshot.PNG)
+
+I haven't even actually figured out how to change the Vim font or colours in either shell---likely I'll do another post on that sometime soon. What I _did_ figure out, though, is how to change the shell prompt in Git Bash. Here's how!
+
+# Editing the shell prompt in Git Bash
+
+Oh man, did I just do the recipe website thing where I write 2000 words of preamble before the actual content. Thanks for suffering through it all, here's the real deal.
+
+
+In Alan P. Barber's [post](https://alanbarber.com/post/how-to-customize-the-git-for-windows-bash-shell-prompt/), they explain that to change the shell prompt in Git Bash, you need to edit the script at `C:\Program Files\Git\etc\profile.d\git-prompt.sh`.
+
+I thought I would be clever and edit it with Vim, since I'm trying to learn it, but it turned into a bit of a nightmare. Git Bash is---at best---a compromise, letting Windows users access Git via the command line without by any means giving the complete Linux experience. My Vim attempt crashed since I don't have permission to edit `git-prompt.sh` or even the permission to _modify_ the permissions with `chmod`, and `sudo` doesn't even exist in Git Bash. Bailed on this idea, needless to say.
+
+In Alan Barber's post, you'll notice the [ADMINISTRATOR] label in the Notepad++ window title. Once you navigate over to the `git-prompt.sh` script in File Explorer and open it up for editing in Notepad++, that's the way that you can get around the permissions issue.
+
+After that it's pretty straightforward. The script itself is only a few lines that set environment variables. For me, to get rid of the glowing purple "MINGW64" at the end of every Git Bash shell prompt, I just had to delete the two lines that say
+
+`PS1="$PS1"'\[\033[35m\]' # change to purple`
+
+`PS1="$PS1"'$MSYSTEM ' # show MSYSTEM`
+
+The end result:
+
+![git bash shell prompt without the "MINGW64" appended](/assets/21-11-07-git-bash-screenshot.PNG)
+
+There are likely some other flexibilities that editing this script opens up, and I'm looking forward to exploring them in the future. Hopefully I'll also get around to solving my original problem, and find a way to use Vim in a shell without feeling like I'm trying to read the fine print on a medicine bottle.

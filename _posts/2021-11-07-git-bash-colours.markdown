@@ -5,13 +5,13 @@ title: "Editing the shell prompt in Git Bash"
 
 Maybe it's just me, but the default fonts and colour schemes in a lot of shell terminals are god awful. I use Git Bash, PuTTY, and CygWin frequently and like, I mean...
 
-![difficult-to-read Vim screenshot](/assets/21-11-07-vim-screenshot.PNG)
+![difficult-to-read Vim screenshot](/assets/21-11-07-vim-screenshot.png)
 
 Like for real I'll give you five dollars if you can tell me, from a normal reading distance, what the bit after the shebang and the commented line say. I'm not even that colourblind as far as I know and man, that is awful.
 
 I wrote that script the other day using Vim in the CygWin shell. Forgetting which shell was really the culprit, I just spent some time trying out ways to switch the colours and font in Git Bash (whoops!). In the end, the default Git Bash colours aren't too bad, but it still led me down the trail of looking into this kind of config stuff.
 
-![less painful Vim screenshot](/assets/21-11-07-git-vim-screenshot.PNG)
+![less painful Vim screenshot](/assets/21-11-07-git-vim-screenshot.png)
 
 I haven't even actually figured out how to change the Vim font or colours in either shell---likely I'll do another post on that sometime soon. What I _did_ figure out, though, is how to change the shell prompt in Git Bash. Here's how!
 
@@ -34,6 +34,6 @@ After that it's pretty straightforward. The script itself is only a few lines th
 
 The end result:
 
-![git bash shell prompt without the "MINGW64" appended](/assets/21-11-07-git-bash-screenshot.PNG)
+![git bash shell prompt without the "MINGW64" appended](/assets/21-11-07-git-bash-screenshot.png)
 
 There are likely some other flexibilities that editing this script opens up, and I'm looking forward to exploring them in the future. Hopefully I'll also get around to solving my original problem, and find a way to use Vim in a shell without feeling like I'm trying to read the fine print on a medicine bottle.

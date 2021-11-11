@@ -4,5 +4,7 @@
 
 layout: home
 ---
+![photo of me](/assets/photo-of-me.jpg)
+&nbsp;
 
 I do GIS, mapmaking, data analysis & visualization, and software design. See some of my past projects [here](/projects.md), or check out my [github](https://github.com/zripka).

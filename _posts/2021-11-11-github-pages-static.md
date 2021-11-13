@@ -19,7 +19,7 @@ I came to Jekyll in the same way I imagine a lot of people do, through Github Pa
 
 After I got the website up and running through Github Pages, I started to think about getting that sort of portfolio space working. From the beginning, I'd been looking for examples of GIS portfolios that people have created and hosted in the same way. Abdullah Ameen's website that I linked to above is one of the first that appears in search results.
 
-I have my [Projects](/projects.md) page set up, but in my mind it's only a first draft. The single-column setup is overwhelming already, and I only have two of my previous projects up there. I'm aiming to have probably more like a dozen, and it's going to be borderline unreadable unless I figure something else out.
+I have my [Projects](/projects/) page set up, but in my mind it's only a first draft. The single-column setup is overwhelming already, and I only have two of my previous projects up there. I'm aiming to have probably more like a dozen, and it's going to be borderline unreadable unless I figure something else out.
 
 The way Abdullah designed it, by contrast, is awesome. The design style looks dated, but I love the tidiness of the grid layout. Each project link is a small version of the project it links to. It's like a menu in the restaurant sense, it gives you a teaser of each item without overwhelming you with detail.
 

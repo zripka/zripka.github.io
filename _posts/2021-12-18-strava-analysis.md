@@ -22,7 +22,7 @@ Before I even download the data, here are some questions I'd like to answer:
 - What did the temporal distribution of my running look like?
 
 # Downloading the data
-For anyone who uses Strava, it's pretty easy to download your account data. I logged in on Strava's website, hit Settings > My Account > Download or Delete Your Account, and click "Request Your Archive." That sends you an email with a download link. They say it could take several hours, but I got the link for mine in about two minutes.
+For anyone who uses Strava, it's pretty easy to download your account data. I logged in on Strava's website, hit Settings > My Account > Download or Delete Your Account, and clicked "Request Your Archive." That sends you an email with a download link. They say it could take several hours, but I got the link for mine in about two minutes.
 
 Whoa, okay. I haven't done this before, this is super rich. I was expecting a .csv with like, date, distance, elevation probably. That's all there, but there's also like, _everything_. A bunch of stuff I've never used (like who registers their "components" on Strava), but there's every comment I've ever written in the app, a spreadsheet of every like I received, you name it. About forty .csv files all told.
 

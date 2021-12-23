@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: /strava-analysis-1/
 title:  "Analyzing Strava data in R (part 1)"
 date: 2021-12-18 -0400
 ---

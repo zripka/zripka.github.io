@@ -4,6 +4,8 @@ permalink: /strava-analysis-1/
 title:  "Analyzing Strava data in R (part 1)"
 date: 2021-12-18 -0400
 ---
+[part 2 ->](/strava-analysis-2/)
+
 When COVID hit I was living in Montreal. Those early months stick out in my mind as a particularly moody time and I'm grateful we're past that, though obviously the pandemic is still with us (for [real](https://www.nbcnews.com/news/world/omicron-linked-global-vaccine-inequality-experts-rcna6916)).
 
 ![a bright daytime photo of a path on Mount Royal covered in snow with a blue sky](/assets/21-12-18-outremont-lookout-winter.png)

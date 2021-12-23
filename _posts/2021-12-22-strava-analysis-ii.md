@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Analyzing Strava data in R (part 2)"
+permalink: /strava-analysis-2/
 date: 2021-12-22 -0400
 ---
 [<- part 1](/strava-analysis-1/)

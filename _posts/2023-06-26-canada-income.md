@@ -9,7 +9,6 @@ At the national level, what is Canada's income distribution?
 
 In 2021, there were 14,978,950 households in Canada. The median income of households was $84,000.
 
-
 | household income     | number of households | percentage | rolling sum | rolling percentage |
 |----------------------|----------------------|------------|-------------|--------------------|
 | Under $5,000         | 165,180              | 1.1%       | 165,180     | 1.1%               |
@@ -31,6 +30,8 @@ In 2021, there were 14,978,950 households in Canada. The median income of househ
 | $125,000 to $149,999 | 1,283,445            | 8.6%       | 11,961,935  | 79.9%              |
 | $150,000 to $199,999 | 1,545,940            | 10.3%      | 13,507,875  | 90.2%              |
 | $200,000 and over    | 1,471,075            | 9.8%       | 14,978,950  | 100.0%             |
+
+This table reflects "total income," the sum of all household members' income _before_ income taxes and deductions. Total income includes wages, salaries, tips, self-employment income, dividends, child support, scholarships, social assistance, Canada Pension Plan benefits, and Old Age Security benefits. It does not include one-off income like lottery or gambling wins or, notably, capital gains. (Statistics Canada has more [here](https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/definition-eng.cfm?ID=pop123)).
 
 ## How do we know?
 The data comes from the 2021 Canadian census, [Table 98-10-0055-01](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=9810005501).

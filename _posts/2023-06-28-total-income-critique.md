@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Critique: "total income" (Statistics Canada)"
+title: "Critique: 'total income' (Statistics Canada)"
 permalink: /total-income-critique/
 ---
 

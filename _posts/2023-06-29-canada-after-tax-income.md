@@ -44,7 +44,7 @@ The data comes from the 2021 Canadian census, [Table 98-10-0056-01](https://www1
 
 `if [ ! -f $file_name ];`  
 `then`  
-`        curl -o $file_name -kL "https://www150.statcan.gc.ca/t1/tbl1/en/dtl!downloadDbLoadingData-nonTraduit.action?pid=9810005601&latestN=0&startDate=20210101&endDate=20210101&csvLocale=en&selectedMembers=%5B%5B1%5D%2C%5B1%5D%2C%5B1%5D%2C%5B1%5D%2C%5B1%5D%2C%5B1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%5D%2C%5B1%2C2%5D%5D&checkedLevels="`  
+`curl -o $file_name -kL "https://www150.statcan.gc.ca/t1/tbl1/en/dtl!downloadDbLoadingData-nonTraduit.action?pid=9810005601&latestN=0&startDate=20210101&endDate=20210101&csvLocale=en&selectedMembers=%5B%5B1%5D%2C%5B1%5D%2C%5B1%5D%2C%5B1%5D%2C%5B1%5D%2C%5B1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%5D%2C%5B1%2C2%5D%5D&checkedLevels="`  
 `fi`
 
 `xsv select 8,9,16 $file_name | xsv search --select 2 2020 | xsv select 1,3 | csvlook -I | trim`

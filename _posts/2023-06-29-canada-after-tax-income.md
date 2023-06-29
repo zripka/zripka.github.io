@@ -59,6 +59,7 @@ The data comes from the 2021 Canadian census, [Table 98-10-0056-01](https://www1
 | $20,000 to $24,999                       | 681895   |
 | $25,000 to $29,999                       | 589110   |
 | $30,000 to $34,999                       | 582280   |  
+
 … with 14 more lines
 
 `xsv select 8,9,16 $file_name |`  
